@@ -1,16 +1,31 @@
 ---
-
+import Layout from '@/layouts/Layout.astro';
+import { WEBSHOP_NAME } from '@/consts';
 ---
 
-<html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
-</html>
+<Layout title="Welcome">    
+    <h1>Login</h1>
+
+    <p>
+    Welkom op de demo-webshop van {WEBSHOP_NAME}. U kun inloggen met onderstaande gegevens. 
+    Heeft u nog geen <strong>account</strong>? Klik dan in het menu op 'Aanmelden'. 
+    </p>
+
+    <form name="form1" id="form1" method="post" action="">
+        <table border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                        <td>E-mail adres:</td>
+                        <td><input name="email" type="text" id="email" size="15" /></td>
+                </tr>
+                <tr>
+                        <td>Password:</td>
+                        <td><input name="password" type="password" id="password" size="15" /></td>
+                </tr>
+        </table>
+        <input type="submit" name="Submit" value="Login" />
+    </form>
+</Layout>
+
+<style>
+
+</style>

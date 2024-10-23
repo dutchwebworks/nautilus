@@ -1,0 +1,74 @@
+body {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #000000;
+}
+a {
+	font-weight: bold;
+	color: #2a4450;
+	text-decoration: underline;
+}
+a:hover {
+	text-decoration: none;
+}
+a img{
+	border-style: none;
+}
+h1 {
+	font: bold 14px "Trebuchet MS", Verdana, _sans-serif;
+	color: #2a4450;
+	font-size: 14px;
+	font-weight: bold;
+}
+h3 {
+	font: bold 12px "Trebuchet MS", Verdana, _sans-serif;
+	color: #2a4450;
+	font-size: 12px;
+	font-weight: bold;
+	margin-top: 30px;
+}
+
+
+p.prijs {
+	font-size: 14px;
+	font-style: italic;
+	font-weight: bold;
+	text-align: right;
+	float: right;
+}
+
+td.productnaam {
+	font-style: italic;
+	font-weight: bold;
+}
+
+#results {
+	border: 2px solid #004365;
+	margin-bottom: 20px;
+}
+
+#results th {
+	color: #ffffff;
+	background-color: #004365;
+	font-size: 12px;
+	padding: 1px;
+	text-align: left;
+	padding-right: 10px;
+}
+
+#results td {
+	padding: 4px;
+	font-size: 10px;
+	padding: 5px;
+	color: #000000;
+	padding-right: 10px;
+}
+#results .even {
+	background-color: #E2E9CB;
+}
+#results .odd {
+	background-color: #C8D1A8;
+}
+#results th a {
+	color: #605636;
+}

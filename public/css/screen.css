@@ -1,0 +1,336 @@
+/* Tags */
+
+body {
+	margin: 0px;
+	padding: 0px;
+	color: #48391b;
+	background: #2a4450;
+	font: 12px/1.5em Verdana, Arial, Helvetica, sans-serif;
+	text-align: center;
+}
+
+dd {
+	line-height: 1.5em;
+	font-style: italic;
+}
+
+td {
+	padding-right: 10px;
+	font-size: 11px;
+	padding: 3px;
+}
+
+th {
+	font-size: 14px;
+	text-align: left;
+}
+
+p {
+	font-size: 11px;
+}
+
+h1, h2, h3, p, ul {
+	margin-top: 0px;
+}
+
+a img {
+	border-style: none;
+}
+
+input, textarea, select {
+	background: #e2e9cb;
+	border: 1px solid #9da486;
+	position: relative;
+	top: 5px;
+}
+
+input:hover, textarea:hover, select:hover {
+	background: #f6fedd;
+}
+
+/* Design table */
+
+table.design tr.odd {
+	background: #bdc59f;
+}
+
+table.design tr.even {
+	background: #e2e9ca;
+}
+
+table.design th {
+	background: #004365;
+	color: #ffffff;
+	font-size: 12px;
+	padding: 5px;
+	padding-right: 10px;
+}
+
+#main table.design th a {
+	color: #ffffff;
+}
+
+table.design td {
+	padding: 3px;
+	padding-right: 10px;
+}
+
+table.design {
+	border: 1px solid #004365;
+}
+
+/* ID's */
+
+#bodywrapper {
+	width: 780px;
+	background: repeat-y left top url(../img/nautilus_main.jpg);
+	text-align: left;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+#header {
+	background: url(../img/nautilus_header_01.jpg) no-repeat left top;
+	width: 780px;
+	height: 223px;
+}
+
+#pagefooter {
+	background: no-repeat url(../img/nautilus_bottom.jpg) left bottom;
+	height: 100px;
+	clear: both;
+}
+
+/* Side */
+
+#side {
+	margin-top: 40px;
+	width: 170px;
+	margin-left: 525px;
+	_margin-left: 515px; /* IE6.x Win */
+}
+
+#side h3 {
+	color: #b50b23;
+	font: bold 14px "Trebuchet MS", Verdana, _sans-serif;
+	border-bottom: 1px solid #2a454e;
+	padding-bottom: 5px;
+}
+
+#side ul {
+	margin-bottom: 30px;
+	margin-left: 20px;
+	padding: 0px;
+}
+
+#side ul li {
+	list-style: url(../img/bullet.gif);
+	padding-bottom: 3px;
+}
+
+#side a {
+	color: #2a4450;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#side a:hover {
+	text-decoration: underline;
+}
+
+/* Main */
+
+#main {
+	margin-left: 10px;
+	float: left;
+	width: 480px;
+}
+
+#main h1 {
+	font: bold 16px "Trebuchet MS", Verdana, _sans-serif;
+	color: #b50b23;
+	padding-top: 15px;
+	border-bottom: 2px solid #a2aa88;
+	padding-bottom: 5px;
+}
+
+#main h2 {
+	background: no-repeat left bottom  url(../img/schelp.jpg);
+	padding-left: 35px;
+	font-size: 14px;
+	padding-top: 8px;
+	margin-top: 20px;
+}
+
+#main ul {
+	list-style: square;
+}
+
+#main a {
+	color: #2a454e;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#main a:hover {
+	text-decoration: none;
+}
+
+#main .explainbox {
+	background: #e2e9cb;
+	border: 2px dotted #48391b;
+	padding: 10px;
+}
+
+#main ul.explainbox {
+	list-style: none;
+	padding: 5px;
+	padding-left: 10px;
+}
+
+#main dt {
+	color: #074059;
+	font-weight: bold;
+}
+
+#main dd {
+	margin-left: 20px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+#main table.design .thumbnail {
+	width: 50px;
+}
+
+/* Product */
+
+#main .product {
+	clear: left;
+	width: 480px;
+	border: 1px solid #074059;
+	margin-bottom: 20px;
+}
+
+#main .product th {
+	background: #004365;
+	color: #ffffff;
+	font-size: 14px;
+	padding: 5px;
+}
+
+#main .item_odd {
+	background: #c8d1a8;
+}
+
+#main .product .price {
+	text-align: right;
+	background: url(../img/zand.jpg) no-repeat right top #004365;
+	width: 120px;
+}
+
+#main .product .description {
+}
+
+#main .product img {
+	float: right;
+	margin-left: 10px;
+}
+
+#main .product .action {
+	padding-bottom: 10px;
+}
+
+/* Footer */
+
+#footer {
+	width: 780px;
+	color: #53899d;
+	font-size: 10px;
+	background: none;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#footer_info {
+	margin-left: 20px;
+	margin-right: 110px;
+}
+
+#footer ul {
+	margin-left: 40px;
+	margin-top: 20px;
+}
+
+#footer li {
+	display: inline;
+	padding-right: 10px;
+}
+
+#footer li a {
+	color: #53899d;
+	text-decoration: none;
+}
+
+#footer li a:hover, #footer p:hover {
+	color: #ffffff;
+}
+
+/* Common classes */
+
+.status {
+	color: #b50b23;
+	font-weight: bold;
+}
+
+.strong, strong {
+	font-weight: bold;
+}
+
+ul.clean {
+	list-style: none;
+	margin: 0px;
+	padding: 0px;
+}
+
+.clear_left {
+	clear: left;
+}
+
+.clear {
+	clear: both;
+}
+
+.clear_right {
+	clear: right;
+}
+
+.float_left {
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+.float_right {
+	margin-bottom: 10px;
+	margin-left: 10px;
+	float: right;
+}
+
+.hide {
+	display: none;
+}
+
+.left {
+	text-align: left;
+}
+
+.center {
+	text-align: center;
+}
+
+.right {
+	text-align: right;
+}
