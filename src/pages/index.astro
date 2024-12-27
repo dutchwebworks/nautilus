@@ -3,15 +3,15 @@ import Layout from '@/layouts/Layout.astro';
 import { WEBSHOP_NAME } from '@/consts';
 ---
 
-<Layout title="Welcome">    
+<Layout title="Login" headerImg="nautilus_header_04.jpg">    
     <h1>Login</h1>
 
     <p>
-    Welkom op de demo-webshop van {WEBSHOP_NAME}. U kun inloggen met onderstaande gegevens. 
-    Heeft u nog geen <strong>account</strong>? Klik dan in het menu op 'Aanmelden'. 
+        Welkom op de demo-webshop van {WEBSHOP_NAME}. U kun inloggen met onderstaande gegevens. 
+        Heeft u nog geen <strong>account</strong>? Klik dan in het menu op 'Aanmelden'. 
     </p>
 
-    <form name="form1" id="form1" method="post" action="">
+    <form name="form1" id="form1" method="post" action="browse-shop">
         <table border="0" cellspacing="0" cellpadding="0">
                 <tr>
                         <td>E-mail adres:</td>
@@ -22,6 +22,7 @@ import { WEBSHOP_NAME } from '@/consts';
                         <td><input name="password" type="password" id="password" size="15" /></td>
                 </tr>
         </table>
+
         <input type="submit" name="Submit" value="Login" />
     </form>
 </Layout>

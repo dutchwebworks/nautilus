@@ -29,7 +29,11 @@ p {
 	font-size: 11px;
 }
 
-h1, h2, h3, p, ul {
+h1,
+h2,
+h3,
+p,
+ul {
 	margin-top: 0px;
 }
 
@@ -37,14 +41,18 @@ a img {
 	border-style: none;
 }
 
-input, textarea, select {
+input,
+textarea,
+select {
 	background: #e2e9cb;
 	border: 1px solid #9da486;
 	position: relative;
 	top: 5px;
 }
 
-input:hover, textarea:hover, select:hover {
+input:hover,
+textarea:hover,
+select:hover {
 	background: #f6fedd;
 }
 
@@ -83,20 +91,21 @@ table.design {
 
 #bodywrapper {
 	width: 780px;
-	background: repeat-y left top url(../img/nautilus_main.jpg);
+	background: repeat-y left top url(/img/nautilus_main.jpg);
 	text-align: left;
 	margin-right: auto;
 	margin-left: auto;
+	overflow: hidden;
 }
 
 #header {
-	background: url(../img/nautilus_header_01.jpg) no-repeat left top;
+	background: url(/img/nautilus_header_01.jpg) no-repeat left top;
 	width: 780px;
 	height: 223px;
 }
 
 #pagefooter {
-	background: no-repeat url(../img/nautilus_bottom.jpg) left bottom;
+	background: no-repeat url(/img/nautilus_bottom.jpg) left bottom;
 	height: 100px;
 	clear: both;
 }
@@ -107,7 +116,8 @@ table.design {
 	margin-top: 40px;
 	width: 170px;
 	margin-left: 525px;
-	_margin-left: 515px; /* IE6.x Win */
+	_margin-left: 515px;
+	/* IE6.x Win */
 }
 
 #side h3 {
@@ -124,7 +134,7 @@ table.design {
 }
 
 #side ul li {
-	list-style: url(../img/bullet.gif);
+	list-style: url(/img/bullet.gif);
 	padding-bottom: 3px;
 }
 
@@ -155,7 +165,7 @@ table.design {
 }
 
 #main h2 {
-	background: no-repeat left bottom  url(../img/schelp.jpg);
+	background: no-repeat left bottom url(/img/schelp.jpg);
 	padding-left: 35px;
 	font-size: 14px;
 	padding-top: 8px;
@@ -225,12 +235,11 @@ table.design {
 
 #main .product .price {
 	text-align: right;
-	background: url(../img/zand.jpg) no-repeat right top #004365;
+	background: url(/img/zand.jpg) no-repeat right top #004365;
 	width: 120px;
 }
 
-#main .product .description {
-}
+#main .product .description {}
 
 #main .product img {
 	float: right;
@@ -274,7 +283,8 @@ table.design {
 	text-decoration: none;
 }
 
-#footer li a:hover, #footer p:hover {
+#footer li a:hover,
+#footer p:hover {
 	color: #ffffff;
 }
 
@@ -285,7 +295,8 @@ table.design {
 	font-weight: bold;
 }
 
-.strong, strong {
+.strong,
+strong {
 	font-weight: bold;
 }
 

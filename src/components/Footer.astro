@@ -1,33 +1,37 @@
+---
+import { WEBSHOP_NAME } from '@/consts';
+---
 
-<!-- BEGIN footer.inc.tmp -->	
 	</div>
 	
 	<div id="side">
-	<h2 class="hide">Navigation</h2>
-[menu]		
-		<p class="status">[status]</p>
-		<p><a href="http://store.apple.com/" target="_blank"><img src="/img/madeonamac.gif" alt="Made on a Mac" /></a></p>
-	</div>	
-	
-	<div id="pagefooter"><hr class="hide" /></div>	
-	
-</div>
+		<h2 class="hide">Navigation</h2>
+			[menu]		
+			<p class="status">[status]</p>
 
-<div id="footer">
-	<div id="footer_info">
-		<ul>
-			<li><a href="main.php?page=about" title="Lees meer over deze webshop">&copy; AtlantisDesign, 2004</a></li>
-			<li><a href="mailto:info@atlantisdesign.nl?subject={webshop_name}" target="_blank" title="Informatie met betrekking tot deze webshop">Webmaster</a></li>
-			<li><a href="main.php?page=voorwaarden" title="Voorwaarden bij aanmelding">Voorwaarden</a></li>
-			<li><a href="shop_rss.php" title="Productlijst in XML formaat">RSS</a></li>
-			<li><a href="http://www.atlantisdesign.nl/" title="AtlantisDesign">AtlantisDesign</a></li>
-		</ul>	
-		<p class="center">
-			Mac and the Mac logo are trademarks of Apple Computer, Inc., registered in the U.S. and other countries. 
-			The Made on a Mac Badge is a trademark of Apple Computer, Inc., used with permission.
-		</p>	
+			<p><a href="http://store.apple.com/" target="_blank"><img src="/img/madeonamac.gif" alt="Made on a Mac" /></a></p>
+		</div>	
+		
+		<div id="pagefooter">
+			<hr class="hide" />
+		</div>	
 	</div>
-</div>
 
+	<div id="footer">
+		<div id="footer_info">
+			<ul>
+				<li><a href="/about" title="Lees meer over deze webshop">&copy; AtlantisDesign, 2004</a></li>
+				<li><a href="mailto:info@atlantisdesign.nl?subject={WEBSHOP_NAME}" target="_blank" title="Informatie met betrekking tot deze webshop">Webmaster</a></li>
+				<li><a href="main.php?page=voorwaarden" title="Voorwaarden bij aanmelding">Voorwaarden</a></li>
+				<li><a href="shop_rss.php" title="Productlijst in XML formaat">RSS</a></li>
+				<li><a href="http://www.atlantisdesign.nl/" title="AtlantisDesign">AtlantisDesign</a></li>
+			</ul>	
+
+			<p class="center">
+				Mac and the Mac logo are trademarks of Apple Computer, Inc., registered in the U.S. and other countries. 
+				The Made on a Mac Badge is a trademark of Apple Computer, Inc., used with permission.
+			</p>	
+		</div>
+	</div>
 </body>
 </html>

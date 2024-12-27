@@ -1,0 +1,71 @@
+---
+import Layout from '@/layouts/Layout.astro';
+---
+
+<Layout title="Login" headerImg="nautilus_header_04.jpg"> 
+    <h1>Assortiment</h1>
+
+    <p>
+        Klik op de knop <strong>'Toevoegen'</strong> om het artikel aan uw mandje toe te voegen.
+        Als u meer dan &eacute;&eacute;n van hetzelfde artikel wilt bestellen dan kunt u tevens 
+        het aantal ingeven. De quantiteit van een aangeklikt product kunt u weer wijzigen
+        in uw mandje.
+    </p>
+
+    <p class="status">[status]</p>
+
+    <p class="non_print">Toon categorie:
+        <select name="cat" onchange="MM_jumpMenu('parent',this,0)">
+            <option value="?">All - [aantal_totaal] item(s)</option>
+
+            <option value="?cat_id={cat_id}"[selected]>[cat_name] - [aantal] item(s)</option>
+
+        </select>	
+    </p>
+
+    <form name="toevoegen_[item_id]" id="toevoegen_[item_id]" method="get" action="">
+        <!-- BEGIN CAT_DIV -->
+        <h2>[cat_name]</h2>
+        <!-- END CAT_DIV -->
+        <table class="product item_[row]" cellspacing="0">
+            <tr>
+                <th><a name="item_[item_id]" id="item_[item_id]"></a>[header]</th>
+                <th class="price">&euro; [price]</th>
+            </tr>
+            <tr valign="top">
+                <td>
+                    <p class="description">
+                        [body]
+                    </p>			
+                    
+                    <ul>
+                        <li class="code">Product-code: [code]</li>
+                        <li class="date">Last updated: [mod_date]</li>
+                    </ul>
+                </td>
+                <td>		
+                    <img src="[item_img]" alt="[header]" />
+                </td>
+            </tr>
+            <tr>
+                <td colspan="2">
+                    <p class="action">
+                        Quantity:
+                        <input name="qty" type="text" value="1" size="3" />
+                        <input type="hidden" name="item_id" value="[item_id]" />
+                        <input type="hidden" name="cat_id" value="[cat_id]" />
+                        <input type="submit" name="submit" value="Toevoegen" />
+                    
+                        <!-- BEGIN ADMIN_EDIT -->
+                        <input name="edit" type="button" onClick="MM_goToURL('parent','shop_edit.php?item_id=[item_id]');return document.MM_returnValue" value="Edit" />
+                        <input name="delete" type="button" onClick="javascript:if(confirm('Weet u zeker dat u \\'[header]\\' wilt verwijderen uit deze categorie?')){location = '?del_id=[item_id]&cat_id=[cat_id]';}" value="Delete" />
+                        <span class="status">[actief]</span>
+                        <!-- END ADMIN_EDIT -->
+                    </p>
+                </td>
+            </tr>	
+        </table>
+
+        <hr class="hide" />
+    </form>
+</Layout>
