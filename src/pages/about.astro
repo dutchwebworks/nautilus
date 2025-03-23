@@ -1,6 +1,6 @@
 ---
-import Layout from '@/layouts/Layout.astro';
-import { WEBSHOP_NAME } from '@/consts';
+import Layout from "@/layouts/Layout.astro";
+import { WEBSHOP_NAME } from "@/consts";
 ---
 
 <Layout title="About" headerImg="nautilus_header_04.jpg">
@@ -11,14 +11,16 @@ import { WEBSHOP_NAME } from '@/consts';
             <img class="float_left" src="/img/atlantisdesign.gif" alt="Atlantisdesign logo" />
         </a>
 
-    Deze website is opgezet als test-project voor een demo-webshop. Dit is de eerste demo-webshop die ik gemaakt heb. 
-    Verschillende techieken zijn hier gebruikt. Mijn doel was om een demo-webshop te bouwen met onderstaande technieken. 
-    Gebruik makend van een template systeem in PHP. <strong>{WEBSHOP_NAME} is onderdeel van AtlantisDesign</strong>.
+        Deze website is opgezet als test-project voor een demo-webshop. Dit is de eerste demo-webshop die ik gemaakt heb. Verschillende techieken zijn
+        hier gebruikt. Mijn doel was om een demo-webshop te bouwen met onderstaande technieken. Gebruik makend van een template systeem in PHP. <strong
+        >
+            {WEBSHOP_NAME} is onderdeel van AtlantisDesign
+        </strong>.
     </p>
 
     <p>
-    De HTML die geschreven is moet zich voldoen aan de <strong>W3C 
-    specificaties van XHTML</strong>. In combinatie met pure Css-layouts worden de posities bepaalt van elk element op de website. 
+        De HTML die geschreven is moet zich voldoen aan de <strong>W3C specificaties van XHTML</strong>. In combinatie met pure Css-layouts worden de
+        posities bepaalt van elk element op de website.
     </p>
 
     <h2>Techniek</h2>
@@ -26,107 +28,118 @@ import { WEBSHOP_NAME } from '@/consts';
     <dl>
         <dt><a href="http://www.w3.org/TR/xhtml1/" target="_blank">XHTML 1.0 Transitional</a></dt>
         <dd>
-        Website maken volgens de W3C specificaties. Gebruik maken van <strong>structurele opmaak</strong>. Hierdoor wordt de toegankelijkheid
-        van de website veel beter voor mensen met een handycap of gebruikers van PDA handhelds. XHTML wordt de <strong>opvolger</strong> van het 
-        oude HTML 4.0.1.
+            Website maken volgens de W3C specificaties. Gebruik maken van <strong>structurele opmaak</strong>. Hierdoor wordt de toegankelijkheid van
+            de website veel beter voor mensen met een handycap of gebruikers van PDA handhelds. XHTML wordt de <strong>opvolger</strong> van het oude HTML
+            4.0.1.
         </dd>
-        
+
         <dt><a href="http://en.wikipedia.org/wiki/Rich_Site_Summary" target="_blank">RSS</a></dt>
         <dd>
-        De producten van de webshop worden ook opgesomd in XML formaat zodat deze snel via nieuws lezers bekeken kunnen worden. <strong>Let op!</strong>
-        Voor deze demo webshop moet u wel ingelogd zijn om de XML lijst op te vragen of een item te bekijken in uw webbrowser vanuit uw nieuws lezer.
+            De producten van de webshop worden ook opgesomd in XML formaat zodat deze snel via nieuws lezers bekeken kunnen worden. <strong>
+                Let op!
+            </strong>
+            Voor deze demo webshop moet u wel ingelogd zijn om de XML lijst op te vragen of een item te bekijken in uw webbrowser vanuit uw nieuws lezer.
         </dd>
-        
+
         <dt><a href="http://www.w3.org/Style/Css/" target="_blank">Cascading Style Sheets - Css level 1 en 2</a></dt>
         <dd>
-        Gebruik wordt gemaakt van <strong>pure Css layouts</strong>. Css bepaalt de look en feel van de website. Terwijl de <strong>source-code
-        schoon blijft</strong> van enige presentatie opmaak zoals: font tags, 'br' tags, van die vreselijke 'spacer' plaatjes, plaatjes die worden gebruikt 
-        voor het design van de website. Alle elementen op de webiste worden ge-positioneerd op basis van Css regels.
+            Gebruik wordt gemaakt van <strong>pure Css layouts</strong>. Css bepaalt de look en feel van de website. Terwijl de <strong>
+                source-code schoon blijft
+            </strong> van enige presentatie opmaak zoals: font tags, 'br' tags, van die vreselijke 'spacer' plaatjes, plaatjes die worden gebruikt voor
+            het design van de website. Alle elementen op de webiste worden ge-positioneerd op basis van Css regels.
         </dd>
-        
+
         <dt><a href="http://www.php.net/" target="_blank">PHP 4.x</a></dt>
         <dd>
-        Dit is de server-side scripting taal. Hierdoor worden een verbinding met de demo-webshop database gemaakt.
-        Tevens wordt PHP gebruikt om <strong>templates</strong> te vullen met dynamische data.
+            Dit is de server-side scripting taal. Hierdoor worden een verbinding met de demo-webshop database gemaakt. Tevens wordt PHP gebruikt om <strong
+            >
+                templates
+            </strong> te vullen met dynamische data.
         </dd>
-        
+
         <dt><a href="http://www.mysql.com/" target="_blank">MySQL 4.x</a></dt>
         <dd>
-        In de <strong>database</strong> worden alle users en shop items opgeslagen. Als men een bestelling maakt dan wordt deze opgeslagen in
-        de database. Naderhand kan men een <strong>overzicht</strong> krijgen van zijn/haar bestelling.
+            In de <strong>database</strong> worden alle users en shop items opgeslagen. Als men een bestelling maakt dan wordt deze opgeslagen in de database.
+            Naderhand kan men een <strong>overzicht</strong> krijgen van zijn/haar bestelling.
         </dd>
     </dl>
 
     <h2>Browser compatibiliteit</h2>
-    <p>			
-    De layout van de demo-webshop is met zorg gemaakt en getest in onderstaande browsers. 
-    </p>
+    <p>De layout van de demo-webshop is met zorg gemaakt en getest in onderstaande browsers.</p>
 
     <ul class="explainbox">
         <li><a href="http://www.apple.com/safari/" target="_blank">Apple Safari 1.x (Mac)</a></li>
         <li><a href="http://www.microsoft.com/windows/ie/" target="_blank">Microsoft Internet Explorer 5.x en hoger (Windows)</a></li>
-        <li><a href="http://www.microsoft.com/mac/products/internetexplorer/internetexplorer.aspx?pid=internetexplorer" target="_blank">Microsoft Internet Explorer 5.x (Mac)</a></li>
-        <li><a href="http://www.mozilla.org/products/firefox/" target="_blank">Mozilla 1.7.x &amp; Mozilla Firefox 1.x (Mac, Windows en Linux)</a></li>
+        <li>
+            <a href="http://www.microsoft.com/mac/products/internetexplorer/internetexplorer.aspx?pid=internetexplorer" target="_blank">
+                Microsoft Internet Explorer 5.x (Mac)
+            </a>
+        </li>
+        <li>
+            <a href="http://www.mozilla.org/products/firefox/" target="_blank">Mozilla 1.7.x &amp; Mozilla Firefox 1.x (Mac, Windows en Linux)</a>
+        </li>
         <li><a href="http://www.mozilla.org/products/camino/" target="_blank">Mozilla Camino 0.8 (Mac)</a></li>
         <li><a href="http://channels.netscape.com/ns/browsers/download.jsp" target="_blank">Netscape 7.x (Mac, Windows en Linux)</a></li>
         <li><a href="http://www.opera.com/products/" target="_blank">Opera 7.5.x (Mac, Windows en Linux)</a></li>
         <li><a href="http://www.omnigroup.com/applications/omniweb/" target="_blank">OmniGroup OmniWeb 5.x (Mac)</a></li>
         <li><a href="http://lynx.browser.org/" target="_blank">Lynx 2.8.x (Unix/Linux/MacOSX text-based terminal webbrowser)</a></li>
         <li><a href="http://www.konqueror.org/features/browser.php" target="_blank">KDE Konqueror 2.2.x (Linux)</a></li>
-    </ul>	
+    </ul>
 
     <p>
-    De <strong>Lynx</strong> browser is een <strong>text-based</strong> webbrowser voor Unix/Linux/MacOSX terminals.
-    Deze bevat <strong>geen</strong> mogelijkheid om plaatjes weer te geven of javascripten te gebruiken. Lynx was de eerst
-    webbrowser waarmee je op het World Wide Web kon surfen in <em>'the good old days'</em>. De eerste echte grafische webbrowser was
-    <a href="http://archive.ncsa.uiuc.edu/SDG/Software/Mosaic/NCSAMosaicHome.html" target="_blank">NCSA Mosaic</a> uit juni 1993.
-    </p>	
+        De <strong>Lynx</strong> browser is een <strong>text-based</strong> webbrowser voor Unix/Linux/MacOSX terminals. Deze bevat <strong>
+            geen
+        </strong> mogelijkheid om plaatjes weer te geven of javascripten te gebruiken. Lynx was de eerst webbrowser waarmee je op het World Wide Web kon
+        surfen in <em>'the good old days'</em>. De eerste echte grafische webbrowser was
+        <a href="http://archive.ncsa.uiuc.edu/SDG/Software/Mosaic/NCSAMosaicHome.html" target="_blank">NCSA Mosaic</a> uit juni 1993.
+    </p>
 
     <p>
-    Apple's Safari webbrowser is <strong>afgeleidt van dezelfde render-engine</strong> als die van KDE Konqueror. Een mooie samen werking tussen Apple
-    en de Open Source gemeenschap.
+        Apple's Safari webbrowser is <strong>afgeleidt van dezelfde render-engine</strong> als die van KDE Konqueror. Een mooie samen werking tussen Apple
+        en de Open Source gemeenschap.
     </p>
 
     <h2>Designing with web standards</h2>
     <p>
-    Enige tijd voor het maken van deze demo-webshop heb ik het boek van <a href="http://www.zeldman.com/dwws/" target="_blank">Jeffery Zeldman: 
-    Designing with web standards</a> gelezen. Dit heeft mij over de streep getrokken om nooit, meer tabellen te gebruiken voor de opmaak van websites. 
-    Om nooit meer font tags te gebruiken. De source-code wordt hierdoor zo <strong>simpel en minimaal</strong>
-    dat programma's als <strong>Macromedia Dreamweaver</strong> of <strong>Adobe GoLive</strong> langzamerhand overbodig worden voor een door gewinterde webdesigner
-    die HTML met de hand kan programmeren. Ze zijn gewoon niet meer nodig voor het webdesign. Af en toe gebruik ik ze nog wel eens om eens een
-    javascript te laten maken of oude websites, die nog uit tabellen bestaan, om te bouwen naar pure Css websites.
+        Enige tijd voor het maken van deze demo-webshop heb ik het boek van <a href="http://www.zeldman.com/dwws/" target="_blank">
+            Jeffery Zeldman: Designing with web standards
+        </a> gelezen. Dit heeft mij over de streep getrokken om nooit, meer tabellen te gebruiken voor de opmaak van websites. Om nooit meer font tags
+        te gebruiken. De source-code wordt hierdoor zo <strong>simpel en minimaal</strong>
+        dat programma's als <strong>Macromedia Dreamweaver</strong> of <strong>Adobe GoLive</strong> langzamerhand overbodig worden voor een door gewinterde
+        webdesigner die HTML met de hand kan programmeren. Ze zijn gewoon niet meer nodig voor het webdesign. Af en toe gebruik ik ze nog wel eens om eens
+        een javascript te laten maken of oude websites, die nog uit tabellen bestaan, om te bouwen naar pure Css websites.
     </p>
 
     <p>
-    De manier van opmaken is zoveel makkelijker dan met tabellen. Als de klant een aanpassing wil maken in de website. Dan zijn een paar
-    regels van het Css bestand voldoende om de hele website te veranderen. Tevens legt Zeldman het <strong>voordeel</strong> van web 
-    standaarden uit. Waarom we ook rekening moeten houden met minder valide websurfers (visueel en lichamelijk). PDA handhelds en gebruikers van mobiele telefoons
-    zullen zeker baat hebben bij web standaarden. De XHTML source-code voldoet zich aan standaarden. Als alle browsers of andere
-    internet gerelateerde apparaaten zich aan die standaarden houden komt het allemaal goed. Dan maakt het <strong>niet meer uit</strong> of je op Mac, Windows
-    of Linux op het <strong>web surft met welke browser</strong> dan ook. Daarnaast werkt dezelfde website ook nog op handheld internet enabled apparaten.
+        De manier van opmaken is zoveel makkelijker dan met tabellen. Als de klant een aanpassing wil maken in de website. Dan zijn een paar regels
+        van het Css bestand voldoende om de hele website te veranderen. Tevens legt Zeldman het <strong>voordeel</strong> van web standaarden uit. Waarom
+        we ook rekening moeten houden met minder valide websurfers (visueel en lichamelijk). PDA handhelds en gebruikers van mobiele telefoons zullen zeker
+        baat hebben bij web standaarden. De XHTML source-code voldoet zich aan standaarden. Als alle browsers of andere internet gerelateerde apparaaten
+        zich aan die standaarden houden komt het allemaal goed. Dan maakt het <strong>niet meer uit</strong> of je op Mac, Windows of Linux op het <strong
+        >
+            web surft met welke browser
+        </strong> dan ook. Daarnaast werkt dezelfde website ook nog op handheld internet enabled apparaten.
     </p>
 
     <p>
-    Het allergrootste voordeel is dat je de <strong>content maar 1 keer maakt</strong> of 1 keer laat generen door een script i.c.m. een database. 
-    Met behulp van verschillende Css stylesheets kan een <strong>versie	voor print en screen</strong> gemaakt worden. Een leuke bijkomstigheid is natuurlijk 
-    een stylesheet 'switcher' die het mogelijk maakt meerdere ontwerpen te maken voor dezelfde structurele content.
+        Het allergrootste voordeel is dat je de <strong>content maar 1 keer maakt</strong> of 1 keer laat generen door een script i.c.m. een database.
+        Met behulp van verschillende Css stylesheets kan een <strong>versie voor print en screen</strong> gemaakt worden. Een leuke bijkomstigheid is natuurlijk
+        een stylesheet 'switcher' die het mogelijk maakt meerdere ontwerpen te maken voor dezelfde structurele content.
     </p>
 
-    <p>
-    Als de webbrowser, handheld of welk ander apparaat </strong>geen Css</strong> kan weergeven is de website nog steeds toegankelijk en goed te gebruiken.
-    </p>
+    <p>Als de webbrowser, handheld of welk ander apparaat</p>geen Css</Layout
+> kan weergeven is de website nog steeds toegankelijk en goed te gebruiken.
 
-    <h2>Printen?</h2>
-    <p>
-    Het is altijd een ergenis als je dingen van internet wilt printen. Je krijgt nooit wat je eigenlijk wilde printen, altijd alles wat je juist
-    niet wilt printen: advertenties, logo's menu structuren en het lettertype is altijd te groot. Je krijgt minstens 2 bladzijdes teveel uit je printer
-    Daarom kun je met Css ook <strong>print stylesheets</strong> maken. Deze zijn speciaal bedoelt voor het printen van een website. De werking is best simpel
-    en het een goede toevoeging aan je website.	De opmaak van elementen wordt terug gebracht naar lees, zwart op wit, text. Alle opmaak elementen 
+<h2>Printen?</h2>
+<p>
+    Het is altijd een ergenis als je dingen van internet wilt printen. Je krijgt nooit wat je eigenlijk wilde printen, altijd alles wat je juist niet
+    wilt printen: advertenties, logo's menu structuren en het lettertype is altijd te groot. Je krijgt minstens 2 bladzijdes teveel uit je printer
+    Daarom kun je met Css ook <strong>print stylesheets</strong> maken. Deze zijn speciaal bedoelt voor het printen van een website. De werking is best
+    simpel en het een goede toevoeging aan je website. De opmaak van elementen wordt terug gebracht naar lees, zwart op wit, text. Alle opmaak elementen
     worden verwijderd zoals die plaatjes aan de bovenkant van websites, het menu en wat ander reclame materiaal.
-    </p>
+</p>
 
-    <p>
-    Zodra men de pagina print wordt er een ander stylesheet gebruikt die alleen op de print-out te zien is. Het is zo makkelijk om ook daar
-    rekening mee te houden. <strong>Geen aparte 'printer-friendly' versies</strong>, 1 keer content maken en nu al in 2 verschillende manier te gebruiken.
-    </p>
-</Layout>
+<p>
+    Zodra men de pagina print wordt er een ander stylesheet gebruikt die alleen op de print-out te zien is. Het is zo makkelijk om ook daar rekening
+    mee te houden. <strong>Geen aparte 'printer-friendly' versies</strong>, 1 keer content maken en nu al in 2 verschillende manier te gebruiken.
+</p>

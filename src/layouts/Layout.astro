@@ -1,53 +1,57 @@
 ---
 import Footer from "@/components/Footer.astro";
-import { SITE_TITLE, WEBSHOP_NAME, AUTHOR } from '@/consts';
+import { SITE_TITLE, WEBSHOP_NAME, AUTHOR } from "@/consts";
 
 interface Props {
-	title: string;
-	headerImg: string;
+    title: string;
+    headerImg: string;
 }
 
 const { title, headerImg } = Astro.props;
 ---
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!doctype html>
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-	<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
-	<meta http-equiv="Content-Language" content="nl-NL" />
-	<meta http-equiv="Pragma" content="no-cache" />
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+        <meta http-equiv="Content-Language" content="nl-NL" />
+        <meta http-equiv="Pragma" content="no-cache" />
 
-	<meta name="generator" content={Astro.generator} />
-			
-	<meta name="author" content={AUTHOR} />
+        <meta name="generator" content={Astro.generator} />
 
-	<meta name="author" content="D. Burger" />
-	<meta name="created" content="november 2004" />
+        <meta name="author" content={AUTHOR} />
 
-	<meta name="description" content="{WEBSHOP_NAME} (demo webshop) gemaakt voor portfolio doeleinden" />
-	<meta name="keywords" content="{WEBSHOP_NAME}, portfolio,webshop,webwinkel,php,mysql,css,webstandaarden,webstandards.html,xhtml,open source,open-source,demo,products,producten" />
+        <meta name="author" content="D. Burger" />
+        <meta name="created" content="november 2004" />
 
-	<script language="JavaScript" type="text/JavaScript" src="/js/header.inc.js"></script>
+        <meta name="description" content="{WEBSHOP_NAME} (demo webshop) gemaakt voor portfolio doeleinden" />
+        <meta
+            name="keywords"
+            content="{WEBSHOP_NAME}, portfolio,webshop,webwinkel,php,mysql,css,webstandaarden,webstandards.html,xhtml,open source,open-source,demo,products,producten"
+        />
 
-	<link rel="alternate" type="application/rss+xml" title="{WEBSHOP_NAME} productlijst" href="shop_rss.php" />
+        <script language="JavaScript" type="text/JavaScript" src="/js/header.inc.js"></script>
 
-	<link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
-	<link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
+        <link rel="alternate" type="application/rss+xml" title="{WEBSHOP_NAME} productlijst" href="shop_rss.php" />
 
-	<title>{WEBSHOP_NAME} - {title}</title>
+        <link href="/css/screen.css" rel="stylesheet" type="text/css" media="screen" />
+        <link href="/css/print.css" rel="stylesheet" type="text/css" media="print" />
 
-</head>
-<body>
+        <title>{WEBSHOP_NAME} - {title}</title>
+    </head>
+    <body>
+        <div id="bodywrapper">
+            <p class="hide non_print"><a href="#side">Navigation</a></p>
 
-	<div id="bodywrapper">
-		<p class="hide non_print"><a href="#side">Navigation</a></p>
-		
-		<div id="header" class="non_print">&nbsp;</div>	
-		
-		<h1 class="hide">{WEBSHOP_NAME}</h1>
-		
-		<div id="main">	
+            <div id="header" class="non_print">&nbsp;</div>
 
-		<slot />
-		
-		<Footer />
+            <h1 class="hide">{WEBSHOP_NAME}</h1>
+
+            <div id="main">
+                <slot />
+
+                <Footer />
+            </div>
+        </div>
+    </body>
+</html>
